@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+
+<style>
+   *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: auto;
+}
+.head{
+	width: 100%;
+	height: 200px;
+	/*background: black;*/
+	margin: 0 auto;
+}
+.logo_icon{
+	width: 95%;
+	height: 55%;
+	/*background: red;*/
+	margin: 0 auto;
+}
+.logo{
+	width: 50%;
+	height: 100%;
+	margin-top: 2%;
+	float: left;
+}
+.logo img{
+	height: 60%;
+	width: 60%;
+}
+.icon{
+	height: 100%;
+	float: right;
+	/*background: red;*/
+						
+}
+.icon a{
+	font-size: 22px;
+	margin-bottom: 30px;
+	color: black;
+	text-decoration: none;
+	margin-left: 40px;
+	position: relative;
+	top: 40%; 
+}
+.search{
+	height: 37%;
+	width: 100%;
+	background: black;
+	margin: 0;
+}
+.navi {
+	width: 100%;
+	height: 0%;
+	float: left;
+}
+.navi ul{
+	padding: 0;
+}
+.navi ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 20px;
+	text-align: center;
+	line-height: -0px;
+} 
+.navi ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	letter-spacing: 4px;
+}
+#slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 510px;
+        width: 728px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(728px * 4);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 5s ease infinite;
+    }
+     @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+        50% {
+            margin-left: 0px;
+        }
+        50% {
+            margin-left: calc(-728px * 1);
+        }
+        
+    }
+   
+}
+</style>    
+<body >
+    <header>
+        <div class="head">
+			<div class="logo_icon">
+				<div class="logo">
+					<img src="logo_icon.jpg">
+				</div>
+					<div class="icon">
+						<a href="" class="icon1"> <i class="fa fa-shopping-cart"></i><span>cart</span></a>
+						<a href="" class="icon1"> <i class="fa fa-user"></i><span>guest</span></a>					
+				</div>
+			</div>
+        <div class="search">
+            <div class="navi">
+                <ul>
+                     <li><a href="#news">Home</a></li>
+                        <li><a href = "Register.html">Register</a></li>
+                         <li><a href="login.html">login</a></li>
+                       <li><a href="#Contact">Contact</a></li>	
+                        <li><a href="About.html">About us</a></li>	
+                </ul>
+            </div>
+                    
+        </div>
+    </div>
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src="s1.jpg" class="d-block" alt="..." width="100%" height="100%">
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src="s2.jpg" class="d-block" alt="..." width="100%" height="100%">
+                </h1>
+            </div>  
+    </header>
+
+    <h1 style="color:black";">
+        HELLO  WORLD
+    </h1>
+        
+</body>
+</html>
